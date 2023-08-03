@@ -1,0 +1,29 @@
+
+h1 span{
+    color: #000080;
+    position: relative;
+    font-size: 3rem;
+}
+
+h1 span::before{
+    background: #BD53ED;
+    height: 30px;
+    width: 2px;
+    content: "";
+    position: absolute;
+    right: -8px;
+    top: 50%;
+    transform: translateY(-45%);
+    animation: blink 0.7s infinite;
+}
+
+
+h1 span.stop-blinking::before {
+    animation: none;
+}
+
+@keyframes blink {
+    50%{
+        opacity: 0;
+    }
+}
