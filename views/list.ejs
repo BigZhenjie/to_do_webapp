@@ -1,0 +1,20 @@
+<%- include("partials/header.ejs")  %>
+    <div class="box">
+        <h1><%= title %></h1>
+        <% //console.log(locals.todo); %>
+        <% (locals.todo || []).forEach( (item) =>{%>
+            <form action="/delete/<%=title  %>"", method = "POST" id = item.name>
+                <div class="item">
+                    <input type="checkbox" value ="<%= item._id %>"name="checkbox" onChange= "this.form.submit()">
+                    <p>
+                        <%= item.name %>
+                    </p>
+                </div>
+            </form>
+        <% }) %>
+        <form class = "item submit" action="/<%= title %>" method = "POST" >
+            <input class = "inp" type="text" name = "todo" autocomplete="off" placeholder="New To-Do">
+            <button class = "btn" type="submit" name="list">+</button>
+        </form>
+    </div>
+<%- include("partials/footer.ejs") %>

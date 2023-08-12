@@ -1,5 +1,6 @@
 const dynamicText = document.querySelector("h1 span");
 
+//a bunch of translation of "hello" done by google
 const words = ["Hello", "Hola", "Bonjour", "你好", "Hallo", "Ciao", "こんにちは",
 "Здравствуйте", "مرحبا", "안녕"]
 

@@ -17,6 +17,7 @@ p{
     background-color: #ACFADF;
     display: flex;
     border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: inherit;
 }
 
 .item p{
@@ -25,12 +26,12 @@ p{
     justify-content: center;
 }
 
-.box .item:first-child{
+form:first-of-type{
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
 
-.box .item:last-child{
+form:last-of-type{
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
 }
